@@ -32,7 +32,7 @@ class TestAppium(unittest.TestCase):
         #el = self.driver.find_element(by=AppiumBy.XPATH, value='/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout[2]/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[6]/android.widget.LinearLayout/android.widget.TextView[1]')
         el1 = self.driver.find_element(by=AppiumBy.ACCESSIBILITY_ID,value="設定")
         el1.click()
-        time.sleep(3)
+        time.sleep(5)
 
 
 if __name__ == '__main__':
