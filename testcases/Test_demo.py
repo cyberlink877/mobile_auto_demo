@@ -30,7 +30,7 @@ class TestAppium(unittest.TestCase):
     def test_find_settings(self) -> None:
         # el = self.driver.find_element(by=AppiumBy.XPATH, value='//*[@text="Battery"]')
         #el = self.driver.find_element(by=AppiumBy.XPATH, value='/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout[2]/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[6]/android.widget.LinearLayout/android.widget.TextView[1]')
-        el1 = self.driver.find_element(by=AppiumBy.ACCESSIBILITY_ID,value="設定")
+        el1 = driver.find_element(by=AppiumBy.XPATH, value="(//android.widget.ImageView[@resource-id=\"com.sec.android.app.launcher:id/iconview_imageView\"])[2]")
         el1.click()
         time.sleep(5)
 
