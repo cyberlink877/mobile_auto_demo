@@ -1,4 +1,4 @@
-#!/Users/mac/Documents/automation_source/python_mobile_auto/venv/bin/python3
+#!/Users/mac/jenkins_projects/workspace/mobile_auto_demo/venv/bin/python3.11
 # -*- coding: utf-8 -*-
 import re
 import sys

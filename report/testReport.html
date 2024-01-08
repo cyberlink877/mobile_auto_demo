@@ -1,33 +1,22 @@
 
 Running tests... 
 ----------------------------------------------------------------------
- test_find_settings (Test_demo.TestAppium) ... ERROR (12.207044)s
+ test_find_settings (Test_demo.TestAppium.test_find_settings) ... ERROR (18.090003)s
 
 ======================================================================
-ERROR [12.207044s]: Test_demo.TestAppium.test_find_settings
+ERROR [18.090003s]: Test_demo.TestAppium.test_find_settings
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "/Users/mac/Documents/automation_source/python_mobile_auto/testcases/Test_demo.py", line 33, in test_find_settings
-    el1 = self.driver.find_element(by=AppiumBy.ACCESSIBILITY_ID,value="設定")
-  File "/Users/mac/Documents/automation_source/python_mobile_auto/venv/lib/python3.9/site-packages/appium/webdriver/webdriver.py", line 384, in find_element
-    return self.execute(RemoteCommand.FIND_ELEMENT, {'using': by, 'value': value})['value']
-  File "/Users/mac/Documents/automation_source/python_mobile_auto/venv/lib/python3.9/site-packages/selenium/webdriver/remote/webdriver.py", line 348, in execute
-    self.error_handler.check_response(response)
-  File "/Users/mac/Documents/automation_source/python_mobile_auto/venv/lib/python3.9/site-packages/appium/webdriver/errorhandler.py", line 125, in check_response
-    raise exception_class(msg=message, stacktrace=format_stacktrace(stacktrace))
-selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Stacktrace:
-NoSuchElementError: An element could not be located on the page using the given search parameters.
-    at AndroidUiautomator2Driver.findElOrEls (/Users/mac/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:87:11)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/usr/local/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)
-    at AndroidUiautomator2Driver.findElement (/usr/local/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)
+  File "/Users/mac/jenkins_projects/workspace/mobile_auto_demo/testcases/Test_demo.py", line 33, in test_find_settings
+    el1 = driver.find_element(by=AppiumBy.XPATH, value="(//android.widget.ImageView[@resource-id=\"com.sec.android.app.launcher:id/iconview_imageView\"])[2]")
+          ^^^^^^
+NameError: name 'driver' is not defined
 
 ----------------------------------------------------------------------
-Ran 1 test in 0:00:12
+Ran 1 test in 0:00:18
 
 FAILED
  (Errors=1)
 
 Generating HTML reports... 
-reports/TestResults_Test_demo.TestAppium_2023-12-28_23-02-20.html
+reports/TestResults_Test_demo.TestAppium_2024-01-08_13-14-55.html
